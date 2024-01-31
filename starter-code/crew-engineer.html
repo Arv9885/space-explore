@@ -1,27 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="hero hero-crew pt-5">
+      <div class="flex justify-between">
+        <img
+          src="assets/shared/logo.svg"
+          alt="logo"
+          class="w-25 h-25 ml-[4%]"
+        />
+        <ul
+          class="flex gap-6 items-center px-[15%] py-4 bg-gradient-to-r from-[#1c1c2b60] from-10% via-[#17455ab0] via-30% to-[#160d0d7a] to-90% backdrop-blur-sm"
+        >
+          <li class="nav-items"><a href="index.html">00 Home</a></li>
+          <li class="nav-items">
+            <a href="destination-europa.html">01 Destination</a>
+          </li>
+          <li class="nav-items underline underline-offset-[13px]">
+            0<a href="crew-commander.html">2 Crew</a>
+          </li>
+          <li class="nav-items">
+            <a href="technology-capsule.html">03 Technology</a>
+          </li>
+        </ul>
+      </div>
 
-  02 Meet your crew
+      <section
+        class="main-text flex items-center max-w-[85%] m-auto justify-between"
+      >
+        <div class="w-1/2">
+          <h3
+            class="text-[20px] uppercase font-[Barlow Condensed-Regular, Helvetica] tracking-widest"
+          >
+            02 Meet your crew
+          </h3>
+          <h2
+            class="mt-10 text-[25px] uppercase font-['Bellefair-Regular', Helvetica] tracking-widest opacity-50"
+          >
+            Flight Engineer
+          </h2>
+          <h1
+            class="text-5xl uppercase font-thin mt-4 mb-6 font-[Bellefair-Regular,sans]"
+          >
+            Anousheh Ansari
+          </h1>
+          <p class="text-[15px] font-sans font-semibold mb-7">
+            Anousheh Ansari is an Iranian American engineer and co-founder of
+            Prodea Systems. Ansari was the fourth self-funded space tourist, the
+            first self-funded woman to fly to the ISS, and the first Iranian in
+            space.
+          </p>
 
-  Flight Engineer
-  Anousheh Ansari
+          <form class="flex mt-14 fixed bottom-[8%]">
+        
+              <div class="flex items-center mb-4">
+                <input
+                  type="radio"
+                  id="crew-1"
+                  name="crew"
+                  value="option1"
+                  class="hidden"
+                />
+                <label
+                  for="crew-1"
+                  class="cursor-pointer select-none flex items-center"
+                >
+                  <span
+                    class="w-3 h-3 bg-[grey] opacity-50 rounded-full mr-2"
+                  ></span>
+                </label>
+              </div>
 
-  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
-  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
-  fly to the ISS, and the first Iranian in space. 
-</body>
+            <div class="flex items-center mb-4">
+              
+                <input
+                  type="radio"
+                  id="crew-2"
+                  name="crew"
+                  value="option2"
+                  class="hidden"
+                />
+                <label
+                  for="crew-2"
+                  class="cursor-pointer select-none flex items-center"
+                >
+                  <span
+                    class="w-3 h-3 bg-[grey] opacity-50 rounded-full mr-2"
+                  ></span>
+                </label>
+            
+            </div>
+
+            <div class="flex items-center mb-4">
+              <input
+                type="radio"
+                id="crew-3"
+                name="crew"
+                value="option3"
+                class="hidden"
+              />
+              <label
+                for="crew-3"
+                class="cursor-pointer select-none flex items-center"
+              >
+                <span
+                  class="w-3 h-3 bg-[grey] opacity-50 rounded-full mr-2"
+                ></span>
+              </label>
+            </div>
+
+            <div class="flex items-center mb-4">
+              <input
+                type="radio"
+                id="crew-4"
+                name="crew"
+                value="option4"
+                class="hidden"
+              />
+              <label
+                for="crew-4"
+                class="cursor-pointer select-none flex items-center"
+              >
+                <span
+                  class="w-3 h-3 bg-[white] opacity-100 rounded-full mr-2"
+                ></span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <img
+          class="h-[500px] mt-8"
+          src="assets/crew/image-anousheh-ansari.webp"
+          alt="engineer"
+        />
+      </section>
+    </section>
+    <script src="main.js"></script>
+  </body>
 </html>

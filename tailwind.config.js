@@ -2,8 +2,12 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        "spin-slow": "spin 190s linear infinite",
+      },
+    },
   },
   plugins: [],
-}
+};
 

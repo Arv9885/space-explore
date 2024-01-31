@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="hero hero-destination pt-5 pb[100px]">
+      <div class="flex justify-between">
+        <img
+          src="assets/shared/logo.svg"
+          alt="logo"
+          class="w-25 h-25 ml-[4%] "
+        />
+        <ul
+          class="flex gap-6 items-center px-[15%] py-4 bg-gradient-to-r from-[#1c1c2b60] from-10% via-[#17455ab0] via-30% to-[#160d0d7a] to-90% backdrop-blur-sm"
+        >
+          <li class="nav-items"><a href="index.html">00 Home</a></li>
+          <li class="nav-items">
+            <a href="destination-europa.html">01 Destination</a>
+          </li>
+          <li class="nav-items"><a href="crew-commander.html">2 Crew</a></li>
+          <li class="nav-items">
+            <a href="technology-capsule.html">03 Technology</a>
+          </li>
+        </ul>
+      </div>
+      <h2
+        class="mt-10 pl-[10%] text-xl uppercase font-[Barlow Condensed-Regular, Helvetica] tracking-widest"
+      >
+        01 Pick your destination
+      </h2>
+      <div class="flex items-center justify-evenly mt-[10%]">
+        <div >
+          <img
+            src="assets/destination/image-mars.png"
+            alt="mars"
+            height="400"
+            width="350"
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+            class="spin "
+          />
+        </div>
 
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Mars
-
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
-
-  Avg. distance
-  225 mil. km
-
-  Est. travel time
-  9 months
-</body>
+        <div class="destination-details max-w-[40%]">
+          <ul class="flex gap-2">
+            <li><a href="destination-moon.html"> Moon</a></li>
+            <li>
+              <a
+                class="underline underline-offset-[4px]"
+                href="destination-mars.html"
+                >Mars</a
+              >
+            </li>
+            <li><a href="destination-europa.html">Europa</a></li>
+            <li><a href="destination-titan.html">Titan</a></li>
+          </ul>
+          <h1
+            class="text-8xl uppercase font-thin mt-4 mb-6 font-[Bellefair-Regular,sans]"
+          >
+            Mars
+          </h1>
+          <p class="text-[15px] font-sans font-semibold mb-7">
+            Don’t forget to pack your hiking boots. You’ll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It’s two and a half times the size of Everest!
+          </p>
+          <div class="flex gap-4">
+            <p class="text-base leading-z">
+              Avg. distance: <br />
+              <span class="text-3xl leading-10">225 mil. km</span>
+            </p>
+            <p class="text-base">
+              Est. travel time: <br />
+              <span class="text-3xl leading-10"> 9 months</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

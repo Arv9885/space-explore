@@ -26,6 +26,8 @@ body {
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+
   color: white;
 }
 
@@ -37,3 +39,31 @@ body {
   font-weight: lighter;
   word-spacing: 5px;
 }
+.spin {
+  animation: spin-slow 155s linear infinite;
+
+
+}
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+     input[type="radio"]:checked + label span {
+        background-color:#fff; 
+        opacity:100%;
+        scale: 120%;
+        
+    }
+    
+     input[type="radio"]:active + label span {
+        background-color:#fff; 
+        opacity:100%;
+        scale: 120%;
+        
+    }
+      

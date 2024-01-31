@@ -40,7 +40,7 @@ body {
   word-spacing: 5px;
 }
 .spin {
-  animation: spin-slow 155s linear infinite;
+  animation: spin-slow 50s linear infinite;
 
 
 }

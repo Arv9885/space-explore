@@ -14,25 +14,15 @@ document.getElementById("crew-3").addEventListener("change", () => {
 document.getElementById("crew-4").addEventListener("change", () => {
   window.location.href = "crew-engineer.html";
 });
- 
 
-//    function animateSpin() {
-//         var animatedLogo = document.getElementById("animated-logo");
 
-//         // Add the "animate-spin" class for the spin animation
-//         animatedLogo.classList.add("animate");
 
-//         // Add the "sticky" class and dynamic top and left values
-//         animatedLogo.classList.add("fixed");
-//         animatedLogo.style.top = `${Math.round(Math.random() * 100)}px`;
-//         animatedLogo.style.left = `${Math.round(Math.random() * 100)}px`;
-
-//         // Log the updated classList for debugging
-//         console.log(animatedLogo.classList);
-//     }
-
-//     // Call the function to trigger the animation
-//     animateSpin();
-
-  
-
+// document.getElementById("launch-vehicle").addEventListener("change", () => {
+//   window.location.href = "technology-vehicle.html";
+// });
+// document.getElementById("spaceport").addEventListener("change", () => {
+//   window.location.href = "technology-spaceport.html";
+// });
+// document.getElementById("space-capsule").addEventListener("change", () => {
+//   window.location.href = "technology-capsule.html";
+// });

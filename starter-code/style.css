@@ -41,29 +41,39 @@ body {
 }
 .spin {
   animation: spin-slow 50s linear infinite;
-
-
 }
-  @keyframes spin-slow {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-     input[type="radio"]:checked + label span {
-        background-color:#fff; 
-        opacity:100%;
-        scale: 120%;
-        
-    }
-    
-     input[type="radio"]:active + label span {
-        background-color:#fff; 
-        opacity:100%;
-        scale: 120%;
-        
-    }
-      
+input[type="radio"]:checked + label span {
+  background-color: #fff;
+  opacity: 100%;
+  scale: 120%;
+}
+
+input[type="radio"]:active + label span {
+  background-color: #fff;
+  opacity: 100%;
+  scale: 120%;
+}
+.border-radius-inherit {
+  border-radius: inherit;
+}
+.animation-pulse {
+  animation: pulseAnimate 3s ease-out infinite;
+  opacity: .8;
+  animation-delay: calc(1s *var(--i));
+}
+
+@keyframes pulseAnimate {
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}

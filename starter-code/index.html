@@ -17,25 +17,33 @@
   </head>
   <body>
     <section class="hero hero-home pt-5 pb-44">
-      <div class="flex justify-between ">
+      <div class="flex justify-between">
         <img
           src="assets/shared/logo.svg"
           alt="logo"
           class="w-25 h-25 ml-[4%]"
         />
         <ul
-          class="flex gap-6 items-center px-[15%] py-4 bg-gradient-to-r from-[#1c1c2b60] from-10% via-[#17455ab0] via-30% to-[#160d0d7a] to-90% backdrop-blur-sm "
+          class="flex gap-6 items-center px-[15%] py-4 bg-gradient-to-r from-[#1c1c2b60] from-10% via-[#17455ab0] via-30% to-[#160d0d7a] to-90% backdrop-blur-sm"
         >
-          <li class="nav-items underline underline-offset-[10px]"><a href="index.html">00 Home</a></li>
-          <li class="nav-items"><a href="destination-europa.html">01 Destination</a></li>
+          <li class="nav-items underline underline-offset-[10px]">
+            <a href="index.html">00 Home</a>
+          </li>
+          <li class="nav-items">
+            <a href="destination-europa.html">01 Destination</a>
+          </li>
           <li class="nav-items">0<a href="crew-commander.html">2 Crew</a></li>
-          <li class="nav-items"><a href="technology-capsule.html">03 Technology</a></li>
+          <li class="nav-items">
+            <a href="technology-capsule.html">03 Technology</a>
+          </li>
         </ul>
       </div>
 
-      <div class="flex items-center justify-around mt-16 md:mt-44 m ">
+      <div class="flex items-center justify-around mt-16 md:mt-44 m">
         <div class="max-w-[40%]">
-          <p class="font-mono uppercase font-thin text-[20px]">So, you want to travel to</p>
+          <p class="font-mono uppercase font-thin text-[20px]">
+            So, you want to travel to
+          </p>
           <p class="text-8xl uppercase font-thin font-serif mt-4 mb-6">Space</p>
           <p class="text-[15px] font-sans font-semibold overflow-hidden">
             Let’s face it; if you want to go to space, you might as well
@@ -46,12 +54,20 @@
           </p>
         </div>
 
-        <a
-          href="#"
-          class="flex h-32 w-32 md:h-60 md:w-60 text-center items-center justify-center  bg-white rounded-full hover:scale-110 transform transition-transform "
-        >
-          <p class="text-black  ">Explore</p>
-        </a>
+        <div class="relative flex items-center justify-center">
+          <!-- <div
+            class=" absolute h-[100px] w-[100px] bg-white rounded-full scale-150 opacity-40 "
+          > </div> -->
+          <div
+            class="absolute h-[110px] w-[110px] bg-white rounded-full flex items-center justify-center "
+          >
+            <span style="--i:0;" class="absolute w-[100%] h-[100%] bg-inherit inherit-border-radius rounded-full animation-pulse"></span>
+            <span style="--i:1;" class="absolute w-[100%] h-[100%] bg-inherit inherit-border-radius rounded-full animation-pulse"></span>
+            <span style="--i:2;" class="absolute w-[100%] h-[100%] bg-inherit inherit-border-radius rounded-full animation-pulse"></span>
+            <span style="--i:3 ;" class="absolute w-[100%] h-[100%] bg-inherit inherit-border-radius rounded-full animation-pulse"> </span>
+            <p class="text-black text-center absolute">Explore</p>
+          </div>
+        </div>
       </div>
     </section>
     <script src="data.json"></script>

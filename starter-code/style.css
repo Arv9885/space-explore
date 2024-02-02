@@ -67,8 +67,8 @@ input[type="radio"]:active + label span {
 }
 .animation-pulse {
   animation: pulseAnimate 3s ease-out infinite;
-  opacity: .8;
-  animation-delay: calc(1s *var(--i));
+  opacity: 0.8;
+  animation-delay: calc(1s * var(--i));
 }
 
 @keyframes pulseAnimate {
@@ -76,4 +76,22 @@ input[type="radio"]:active + label span {
     opacity: 0;
     transform: scale(2);
   }
+}
+.dot li{
+
+}
+
+.dot::after {
+  content: " ";
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  top: 10px ;
+  border-radius: 100px;
+  margin: 0 7px ;
+  background-color: #fff;
+}
+.dot:nth-last-child(1)::after{
+    display:none;
+
 }
